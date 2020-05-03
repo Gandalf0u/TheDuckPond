@@ -1,0 +1,23 @@
+Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
+    MaterialParameters {
+        Diffuse : 1.0 1.0 1.0 1.0
+        UseMaterialColors : true
+        ParallaxHeight : 0.05
+        Ambient : 1.0 1.0 1.0 1.0
+        BackfaceShadows : false
+        DiffuseMap : Flip WrapRepeat_S WrapRepeat_T "Materials/woodenWatchTower.jpg"
+        Specular : 0.27 0.27 0.27 1.0
+        Shininess : 17.0
+    }
+    AdditionalRenderState {
+        PointSprite On
+        FaceCull Back
+        AlphaTestFalloff 0.0
+        DepthWrite On
+        ColorWrite On
+        PolyOffset 0.0 0.0
+        DepthTest On
+        Blend Off
+        Wireframe Off
+    }
+}
